@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Fifth Platter - Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    body {
+      background-color: #0e0e0e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .signup-container {
+      background: #1b1b1b;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(245, 179, 66, 0.1);
+      width: 320px;
+    }
+
+    h1 {
+      color: #f5b342;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px 12px;
+      background: #292929;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .input-group input:focus {
+      outline: none;
+      background: #333;
+      box-shadow: 0 0 6px #f5b34288;
+    }
+
+    .input-group label {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      transform: translateY(-50%);
+      color: #aaa;
+      font-size: 13px;
+      pointer-events: none;
+      transition: 0.3s ease;
+    }
+
+    .input-group input:focus + label,
+    .input-group input:not(:placeholder-shown) + label {
+      top: -6px;
+      left: 8px;
+      background: #1b1b1b;
+      padding: 0 4px;
+      font-size: 11px;
+      color: #f5b342;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background: #f5b342;
+      color: #111;
+      font-weight: bold;
+      font-size: 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ffd76e;
+    }
+
+    .footer-text {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    .footer-text a {
+      color: #f5b342;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h1>The Fifth Platter</h1>
+    <form>
+      <div class="input-group">
+        <input type="text" required placeholder=" " />
+        <label>Full Name</label>
+      </div>
+      <div class="input-group">
+        <input type="email" required placeholder=" " />
+        <label>Email Address</label>
+      </div>
+      <div class="input-group">
+        <input type="password" required placeholder=" " />
+        <label>Password</label>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="footer-text">
+      Already have an account? <a href="#">Log in</a>
+    </div>
+  </div>
+</body>
+</html>
