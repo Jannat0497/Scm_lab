@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - The Fifth Platter</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000000;
+      padding: 40px 20px;
+      text-align: center;
+      color: #ffcc00;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 30px;
+    }
+
+    .menu-item {
+      background-color: #1e1e1e;
+      border-radius: 16px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(255, 204, 0, 0.1);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .menu-item h3 {
+      color: #ffcc00;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .menu-item p {
+      color: #dddddd;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      display: block;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:focus {
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Fifth Platter</h1>
+  </header>
+
+  <section class="menu-container">
+    <!-- Item 1 -->
+    <div class="menu-item">
+      <h3>Paneer Butter Masala</h3>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx7obO58mwR6VU7QAxk2wPPGAHWk0oQNNU1A&s" alt="Paneer Butter Masala">
+      <p>Creamy tomato-based gravy with soft paneer cubes.</p>
+      <span class="price">Rs 120</span>
+      <button>Order Now</button>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="menu-item">
+      <h3>Chole Bhature</h3>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsv8U0Df2mlcXYwvhe1v4gRfDhXIbcXRrLZA&s" alt="Chole Bhature">
+      <p>Spicy chickpeas served with fluffy deep-fried bhature.</p>
+      <span class="price">Rs 100</span>
+      <button>Order Now</button>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="menu-item">
+      <h3>Amritsari Kulcha</h3>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-5iqzEK1rOFFMFuiMkbW0F5eUs_BVZMU3KA&s" alt="Amritsari Kulcha">
+      <p>Stuffed tandoori bread with butter and tangy chutney.</p>
+      <span class="price">Rs 80</span>
+      <button>Order Now</button>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="menu-item">
+      <h3>Rajma Chawal</h3>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs8mJG3ZNL_FtXEei3hx735B3VGlDy5q-9hw&s" alt="Rajma Chawal">
+      <p>Slow-cooked kidney beans in masala gravy served with steamed rice.</p>
+      <span class="price">Rs 100</span>
+      <button>Order Now</button>
+    </div>
+  </section>
+
+
+</body>
+</html>
